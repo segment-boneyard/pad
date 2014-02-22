@@ -1,5 +1,11 @@
 
 /**
+ * Module dependencies.
+ */
+
+var css = require('css');
+
+/**
  * Expose `pad`
  */
 
@@ -24,8 +30,8 @@ function pad(dir, n){
     if ('auto' == style[dir]) continue;
     var value = parseFloat(style[dir]);
     if (n < value) continue;
-    els[i].style[dir] = (value + n) + 'px';
+    css(els[i], dir, value + n);
   }
 
-  document.body.style.marginTop = n + 'px';
+  css(document.body, 'margin-' + dir, n);
 }
