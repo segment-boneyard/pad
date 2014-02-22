@@ -1,0 +1,10 @@
+{
+  "name": "pad",
+  "repo": "segmentio/pad",
+  "description": "pad the page",
+  "version": "0.0.1",
+  "keywords": ["pad"],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": ["index.js"]
+}
