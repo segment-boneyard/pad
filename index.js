@@ -29,7 +29,7 @@ function pad(dir, n){
     if ('fixed' != style.position) continue;
     if ('auto' == style[dir]) continue;
     var value = parseFloat(style[dir]);
-    if (n < value) continue;
+    if (n <= value) continue;
     css(els[i], dir, value + n);
   }
 
